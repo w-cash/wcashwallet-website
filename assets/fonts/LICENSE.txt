@@ -1,0 +1,9 @@
+Roboto font files are included through the typeface-roboto package.
+
+Package: typeface-roboto 1.1.13
+Copyright: The Roboto Project Authors
+License: Apache License, Version 2.0
+Package wrapper license: MIT
+
+Source package: https://github.com/KyleAMathews/typefaces/tree/master/packages/roboto
+Font license: https://www.apache.org/licenses/LICENSE-2.0
