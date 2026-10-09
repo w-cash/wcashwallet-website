@@ -74,7 +74,8 @@ test('pins every offered artifact to the published source and checksum', () => {
 test('gives miners an exact wallet-to-pool payout path', () => {
   assert.match(html, /id="mining-payouts"/);
   assert.match(html, /Wcash Mainnet Unified Address with an Ironwood receiver/);
-  assert.match(html, /Open Receive, select Unified, choose Ironwood/);
+  assert.match(html, /On desktop, use Unified; on Android, use Shielded Address/);
+  assert.match(html, /address whose type includes Ironwood/);
   assert.match(html, /https:\/\/pool\.zecwec\.com\//);
   assert.match(html, /Never give the phrase or a private key to the pool/);
   assert.match(html, /Worker credentials belong in the miner; wallet secrets do not/);
