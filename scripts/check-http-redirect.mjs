@@ -55,9 +55,14 @@ function parseMapping(value) {
 }
 
 async function main() {
-  const mappings = process.argv.slice(2);
+  const mappings = (process.env.REDIRECT_MAPPINGS ?? '')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
   if (!mappings.length) {
-    throw new Error('Pass at least one origin mapping, for example http://wcashwallet.com=https://wcashwallet.com.');
+    throw new Error(
+      'Set REDIRECT_MAPPINGS to at least one origin mapping, for example http://wcashwallet.com=https://wcashwallet.com.'
+    );
   }
 
   for (const value of mappings) {
