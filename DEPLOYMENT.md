@@ -24,9 +24,8 @@ The infrastructure owner must implement and review this rule in the actual servi
 Run the live deployment check after every routing or hosting change:
 
 ```sh
-npm run test:deployment -- \
-  http://wcashwallet.com=https://wcashwallet.com \
-  http://www.wcashwallet.com=https://wcashwallet.com
+REDIRECT_MAPPINGS='http://wcashwallet.com=https://wcashwallet.com http://www.wcashwallet.com=https://wcashwallet.com' \
+  npm run test:deployment
 ```
 
 The check requests `/`, `/index.html`, and a nested path with a query. It fails unless each response is a permanent redirect to the exact HTTPS path and query, and it also fails if the HTTP response contains wallet HTML. The `Site checks` workflow exposes the same check as a manually triggered deployment gate.
