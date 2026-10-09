@@ -180,37 +180,117 @@ const platforms = {
   ios: {
     name: 'iOS',
     icon: 'apple',
-    description: 'Your private money, always close. Made for iPhone.',
-    note: 'Unsigned ARM64 device compile archive. Not an App Store or TestFlight build.',
-    url: 'https://github.com/w-cash/wallet-mobile/releases/download/wcash-2.0.23-317/Wcash-Wallet-mainnet-2.0.23-317-f136a09d7b49-ios-arm64-device-compile-unsigned.zip'
+    status: 'DEVELOPER PREVIEW · NO INSTALLABLE RELEASE',
+    description: 'TestFlight is not available. The published unsigned compile archive is not normally installable on an iPhone and is intentionally omitted from this download flow.',
+    network: 'No installable release; source is configured for Wcash Mainnet',
+    version: '2.0.23 (build 317 source)',
+    architecture: 'iPhone ARM64 source target',
+    signing: 'No signed iOS distribution; compile archive is unsigned',
+    install: 'No consumer install method; build from source with Xcode',
+    sourceSha: 'f136a09d7b49',
+    sourceCommit: 'https://github.com/w-cash/wallet-mobile/commit/f136a09d7b4959ee800dcef6d4cb9a0b4b39b1da',
+    sha256: 'Not applicable — no iOS download is offered',
+    support: 'Unsupported; no App Store or TestFlight release',
+    note: 'The release page retains unsigned compile and simulator archives for developers and history.',
+    url: 'https://github.com/w-cash/wallet-mobile/blob/f136a09d7b4959ee800dcef6d4cb9a0b4b39b1da/docs/ios_developer_quickstart.md',
+    action: 'View iOS build instructions',
+    actionIcon: 'diagonal',
+    source: 'https://github.com/w-cash/wallet-mobile',
+    release: 'https://github.com/w-cash/wallet-mobile/releases/tag/wcash-2.0.23-317',
+    manifest: 'https://github.com/w-cash/wallet-mobile/releases/download/wcash-2.0.23-317/MANIFEST.json',
+    checksums: 'https://github.com/w-cash/wallet-mobile/releases/download/wcash-2.0.23-317/SHA256SUMS'
   },
   android: {
     name: 'Android',
     icon: 'android',
-    description: 'Your Wcash, in your pocket. Made for Android.',
-    note: 'ARM64 prerelease signed with the public Android debug certificate.',
-    url: 'https://github.com/w-cash/wallet-mobile/releases/download/wcash-2.0.23-317/Wcash-Wallet-mainnet-2.0.23-317-f136a09d7b49-android-arm64-prodDebug.apk'
+    status: 'DEVELOPER PREVIEW · UNSUPPORTED',
+    description: 'Debug-signed engineering candidate for technical evaluation.',
+    network: 'Wcash Mainnet · plaintext wallet service',
+    version: '2.0.23 (build 317)',
+    architecture: 'Android ARM64',
+    signing: 'Public Android debug certificate; not release-signed',
+    install: 'Sideload APK after explicitly allowing apps from this source',
+    sourceSha: 'f136a09d7b49',
+    sourceCommit: 'https://github.com/w-cash/wallet-mobile/commit/f136a09d7b4959ee800dcef6d4cb9a0b4b39b1da',
+    sha256: 'ad41c67ed080d9a394bb80dacd653c195678144db261732fa967ab93d1b2fcc4',
+    support: 'Unsupported developer candidate; do not use for material funds',
+    note: 'Not a Play Store or controlled-testing release.',
+    url: 'https://github.com/w-cash/wallet-mobile/releases/download/wcash-2.0.23-317/Wcash-Wallet-mainnet-2.0.23-317-f136a09d7b49-android-arm64-prodDebug.apk',
+    action: 'Download unsupported candidate',
+    actionIcon: 'download',
+    source: 'https://github.com/w-cash/wallet-mobile',
+    release: 'https://github.com/w-cash/wallet-mobile/releases/tag/wcash-2.0.23-317',
+    manifest: 'https://github.com/w-cash/wallet-mobile/releases/download/wcash-2.0.23-317/MANIFEST.json',
+    checksums: 'https://github.com/w-cash/wallet-mobile/releases/download/wcash-2.0.23-317/SHA256SUMS'
   },
   macos: {
     name: 'macOS',
     icon: 'apple',
-    description: 'A little more privacy for your everyday desktop.',
-    note: 'Unsigned ARM64 prerelease. macOS may show an unverified-developer warning.',
-    url: 'https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/Wcash-Wallet-MAINNET-UNSIGNED-2.0.25-181-mac-arm64.zip'
+    status: 'DEVELOPER PREVIEW · UNSUPPORTED',
+    description: 'Unsigned engineering candidate for technical evaluation.',
+    network: 'Wcash Mainnet · plaintext wallet service',
+    version: '2.0.25 (build 181)',
+    architecture: 'Apple silicon (ARM64)',
+    signing: 'Unsigned; not notarized',
+    install: 'Download ZIP, extract, then launch manually',
+    sourceSha: '6687e56a30d5',
+    sourceCommit: 'https://github.com/w-cash/wallet-desktop/commit/6687e56a30d5477f6e70375fda0666f966cd6118',
+    sha256: 'cba78d82161afbe6b1748184a627b0a20e4bbd52ddfd65195780dc4cdd2df8e0',
+    support: 'Unsupported developer candidate; do not use for material funds',
+    note: 'macOS may block or warn about this unverified build.',
+    url: 'https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/Wcash-Wallet-MAINNET-UNSIGNED-2.0.25-181-mac-arm64.zip',
+    action: 'Download unsupported candidate',
+    actionIcon: 'download',
+    source: 'https://github.com/w-cash/wallet-desktop',
+    release: 'https://github.com/w-cash/wallet-desktop/releases/tag/wcash-desktop-2.0.25-181',
+    manifest: 'https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/MANIFEST.json',
+    checksums: 'https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/SHA256SUMS.txt'
   },
   windows: {
     name: 'Windows',
     icon: 'windows',
-    description: 'A clear view of your Wcash. Made for your PC.',
-    note: 'Unsigned x64 prerelease. An ARM64 package is available on GitHub.',
-    url: 'https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/Wcash-Wallet-MAINNET-UNSIGNED-2.0.25-181-win-x64.zip'
+    status: 'DEVELOPER PREVIEW · UNSUPPORTED',
+    description: 'Existing unsigned engineering candidate. No new Windows build is implied.',
+    network: 'Wcash Mainnet · plaintext wallet service',
+    version: '2.0.25 (build 181)',
+    architecture: 'Windows x64 (ARM64 also listed in release notes)',
+    signing: 'Unsigned; no Authenticode publisher signature',
+    install: 'Download ZIP, extract, then launch manually; no signed installer',
+    sourceSha: '6687e56a30d5',
+    sourceCommit: 'https://github.com/w-cash/wallet-desktop/commit/6687e56a30d5477f6e70375fda0666f966cd6118',
+    sha256: 'd9bb27dff359de5da58070a73c563b583592aac388b9b3715eb5bc637b5161b0',
+    support: 'Unsupported developer candidate; do not use for material funds',
+    note: 'Windows may warn about an unknown or unverified publisher.',
+    url: 'https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/Wcash-Wallet-MAINNET-UNSIGNED-2.0.25-181-win-x64.zip',
+    action: 'Download unsupported candidate',
+    actionIcon: 'download',
+    source: 'https://github.com/w-cash/wallet-desktop',
+    release: 'https://github.com/w-cash/wallet-desktop/releases/tag/wcash-desktop-2.0.25-181',
+    manifest: 'https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/MANIFEST.json',
+    checksums: 'https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/SHA256SUMS.txt'
   },
   linux: {
     name: 'Linux',
     icon: 'linux',
-    description: 'Your system. Your wallet. A home for Wcash on Linux.',
-    note: 'Unsigned x86_64 AppImage prerelease. A Debian package is available on GitHub.',
-    url: 'https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/Wcash-Wallet-MAINNET-UNSIGNED-2.0.25-181-linux-x86_64.AppImage'
+    status: 'DEVELOPER PREVIEW · UNSUPPORTED',
+    description: 'Unsigned engineering candidate for technical evaluation.',
+    network: 'Wcash Mainnet · plaintext wallet service',
+    version: '2.0.25 (build 181)',
+    architecture: 'Linux x86_64 AppImage (amd64 DEB also listed)',
+    signing: 'Unsigned; no publisher signature',
+    install: 'Download AppImage, mark it executable, then run manually',
+    sourceSha: '6687e56a30d5',
+    sourceCommit: 'https://github.com/w-cash/wallet-desktop/commit/6687e56a30d5477f6e70375fda0666f966cd6118',
+    sha256: 'da2ee38b49933c6b1595478793da51d78e9e23991556dc85f39ebca740c2e405',
+    support: 'Unsupported developer candidate; do not use for material funds',
+    note: 'A separate unsigned amd64 Debian package is documented in the release manifest.',
+    url: 'https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/Wcash-Wallet-MAINNET-UNSIGNED-2.0.25-181-linux-x86_64.AppImage',
+    action: 'Download unsupported candidate',
+    actionIcon: 'download',
+    source: 'https://github.com/w-cash/wallet-desktop',
+    release: 'https://github.com/w-cash/wallet-desktop/releases/tag/wcash-desktop-2.0.25-181',
+    manifest: 'https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/MANIFEST.json',
+    checksums: 'https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/SHA256SUMS.txt'
   }
 };
 const platformTabs = $$('[data-platform]');
@@ -225,12 +305,28 @@ function selectPlatform(key, focus = false) {
     if (selected && focus) tab.focus();
   });
   $('#platform-panel').setAttribute('aria-labelledby',`tab-${key}`);
-  $('#platform-title').textContent=`Wcash for ${platform.name}`;
+  $('#platform-status').textContent=platform.status;
+  $('#platform-title').textContent=`${platform.name} developer preview`;
   $('#platform-description').textContent=platform.description;
+  $('#platform-network').textContent=platform.network;
+  $('#platform-version').textContent=platform.version;
+  $('#platform-architecture').textContent=platform.architecture;
+  $('#platform-signing').textContent=platform.signing;
+  $('#platform-install').textContent=platform.install;
+  $('#platform-source-commit').href=platform.sourceCommit;
+  $('#platform-source-commit code').textContent=platform.sourceSha;
+  $('#platform-sha256').textContent=platform.sha256;
+  $('#platform-support').textContent=platform.support;
   $('#platform-download-note').textContent=platform.note;
   $('#selected-platform-symbol').setAttribute('href',`#i-${platform.icon}`);
   $('#platform-download').href=platform.url;
-  $('#platform-download span').textContent=`Download for ${platform.name}`;
+  $('#platform-download span').textContent=platform.action;
+  $('#platform-download use').setAttribute('href',`#i-${platform.actionIcon}`);
+  $('#platform-download').classList.toggle('build-instructions',key==='ios');
+  $('#platform-source').href=platform.source;
+  $('#platform-release').href=platform.release;
+  $('#platform-manifest').href=platform.manifest;
+  $('#platform-checksums').href=platform.checksums;
 }
 platformTabs.forEach((tab,index) => {
   tab.addEventListener('click',()=>selectPlatform(tab.dataset.platform));

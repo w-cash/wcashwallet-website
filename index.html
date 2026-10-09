@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-Qp+cPPHaQhBO5LxeLL6A4W7SoUnN9qhfd+8X1sPxmZs='; connect-src 'none'; form-action 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-vfGQbYlw2+wYxhAxUGHzErI0Bm6V+fafvHY8rXI2EbA='; connect-src 'none'; form-action 'self'; upgrade-insecure-requests">
   <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#060b12">
   <meta name="robots" content="index, follow">
-  <title>Wcash Wallet — Shield your money.</title>
-  <meta name="description" content="Wcash Wallet is the Zingo-based self-custody wallet for WEC, with shielded and transparent funds on iOS, Android, macOS, Linux and Windows.">
+  <title>Wcash Wallet Developer Preview — WEC</title>
+  <meta name="description" content="Explore the educational Wcash Wallet demo and review unsupported developer-preview builds for WEC. No supported consumer release is available.">
   <link rel="canonical" href="https://wcashwallet.com/">
-  <meta property="og:title" content="Wcash Wallet — Shield your money.">
-  <meta property="og:description" content="The Zingo-based Wcash Wallet for WEC, with the same dark, green identity as the native wallet.">
+  <meta property="og:title" content="Wcash Wallet Developer Preview — WEC">
+  <meta property="og:description" content="Educational wallet demo and unsupported developer-preview builds for WEC. No supported consumer release is available.">
   <meta property="og:url" content="https://wcashwallet.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Wcash Wallet">
@@ -21,8 +21,8 @@
   <meta property="og:image:width" content="512">
   <meta property="og:image:height" content="512">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Wcash Wallet — Shield your money.">
-  <meta name="twitter:description" content="The Zingo-based self-custody wallet for WEC across mobile and desktop.">
+  <meta name="twitter:title" content="Wcash Wallet Developer Preview — WEC">
+  <meta name="twitter:description" content="Educational wallet demo and unsupported developer-preview builds for WEC. No supported consumer release is available.">
   <meta name="twitter:image" content="https://wcashwallet.com/assets/wcash-mark.png">
   <meta name="twitter:image:alt" content="Wcash Wallet green W logo">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
@@ -34,7 +34,7 @@
   <link rel="stylesheet" href="/styles.css?v=11">
   <script src="/app.js?v=4" defer></script>
   <noscript><style>@media(max-width:900px){.menu-toggle{display:none}.mobile-nav[hidden]{display:grid!important;position:absolute;top:77px;left:0;right:0;padding:13px 20px 22px;border:1px solid #05234c;background:#040c17;box-shadow:0 20px 30px #0008}.mobile-nav[hidden]>a{padding:12px 0;color:#c0cbdc;font:400 15px/1.5 Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}}</style></noscript>
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://wcashwallet.com/#organization","name":"Wcash Wallet","url":"https://wcashwallet.com/","logo":{"@type":"ImageObject","url":"https://wcashwallet.com/assets/wcash-mark.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://wcashwallet.com/#website","name":"Wcash Wallet","url":"https://wcashwallet.com/","publisher":{"@id":"https://wcashwallet.com/#organization"}},{"@type":"SoftwareApplication","@id":"https://wcashwallet.com/#wallet","name":"Wcash Wallet","url":"https://wcashwallet.com/","applicationCategory":"FinanceApplication","operatingSystem":"iOS, Android, macOS, Windows, Linux","description":"A Zingo-based self-custody wallet interface for WEC.","image":"https://wcashwallet.com/assets/wcash-mark.png","publisher":{"@id":"https://wcashwallet.com/#organization"},"isPartOf":{"@id":"https://wcashwallet.com/#website"}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://wcashwallet.com/#organization","name":"Wcash Wallet","url":"https://wcashwallet.com/","logo":{"@type":"ImageObject","url":"https://wcashwallet.com/assets/wcash-mark.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://wcashwallet.com/#website","name":"Wcash Wallet","url":"https://wcashwallet.com/","publisher":{"@id":"https://wcashwallet.com/#organization"}},{"@type":"WebPage","@id":"https://wcashwallet.com/#page","name":"Wcash Wallet Developer Preview","url":"https://wcashwallet.com/","description":"Educational wallet demo and unsupported developer-preview builds for WEC. No supported consumer release is available.","isPartOf":{"@id":"https://wcashwallet.com/#website"},"about":{"@id":"https://wcashwallet.com/#organization"}}]}</script>
 </head>
 <body>
   <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -63,15 +63,15 @@
   <header class="site-header">
     <a class="brand" href="/" aria-label="Wcash Wallet home"><img class="brand-mark" src="/assets/wcash-mark.svg" alt="" width="42" height="42"><span>Wcash<span class="brand-light">Wallet</span></span></a>
     <nav class="desktop-nav" aria-label="Main navigation"><a href="#wallet">The wallet</a><a href="#why-wcash">Why Wcash</a><a href="#download">Downloads</a><a href="#faq">FAQs</a></nav>
-    <a class="button button-small header-download" href="#download">Get the wallet <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-diagonal"/></svg></a>
+    <a class="button button-small header-download" href="#download">Developer previews <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-diagonal"/></svg></a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
     <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#wallet">The wallet</a><a href="#why-wcash">Why Wcash</a><a href="#download">Downloads</a><a href="#faq">FAQs</a></nav>
   </header>
   <main id="main">
     <section class="launch section-shell" id="wallet" aria-labelledby="hero-title">
-      <div class="launch-heading"><p class="eyebrow">BASED ON ZINGO. BUILT FOR WCASH.</p><h1 id="hero-title">Shield your <em>money.</em></h1><div class="launch-subline launch-subline-compact"><span>Go on. Make your first move. <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-diagonal"/></svg></span></div></div>
+      <div class="launch-heading"><p class="eyebrow">DEVELOPER PREVIEW · BASED ON ZINGO · BUILT FOR WCASH</p><h1 id="hero-title">Shield your <em>money.</em></h1><div class="launch-subline launch-subline-compact"><span>Educational sample only. No real wallet or blockchain connection. <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-diagonal"/></svg></span></div></div>
       <div class="wallet-experience" id="wallet-demo" data-view="overview">
-        <div class="experience-topline"><span>PERSONAL WALLET / 01</span><span class="demo-pill">INTERACTIVE DEMO</span><button id="reset-demo" type="button">Reset demo <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-history"/></svg></button></div>
+        <div class="experience-topline"><span>EDUCATIONAL SAMPLE / 01</span><span class="demo-pill">NO REAL FUNDS · NO NETWORK</span><button id="reset-demo" type="button">Reset demo <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-history"/></svg></button></div>
         <div class="instrument-layout">
           <nav class="instrument-nav" aria-label="Explore the demo wallet"><img class="instrument-logo" src="/assets/wcash-mark.svg" alt="" width="48" height="48"><button data-demo-view="overview" class="active" aria-pressed="true"><svg class="icon" aria-hidden="true"><use href="#i-wallet-home"/></svg><span>Wallet</span></button><button data-demo-view="send" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-wallet-send"/></svg><span>Send</span></button><button data-demo-view="receive" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-wallet-receive"/></svg><span>Receive</span></button><button data-demo-view="activity" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-wallet-list"/></svg><span>Activity</span></button><span class="instrument-nav-bottom">YOUR KEYS.<br>YOUR WEC.</span></nav>
           <div class="instrument-main">
@@ -87,12 +87,13 @@
             <div class="demo-view" id="demo-activity" hidden><div class="activity-view-heading"><div><p class="demo-section-label">YOUR MONEY IN MOTION</p><h2>A little <em>history.</em></h2></div><span>Sample activity</span></div><div class="demo-activity-table" role="table" aria-label="Simulated wallet activity"><div class="activity-table-head" role="row"><span role="columnheader">Transaction</span><span role="columnheader">Privacy</span><span role="columnheader">WEC</span></div><div id="demo-activity-rows" role="rowgroup"></div></div></div>
           </div>
         </div>
-        <div class="instrument-footer"><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg> You control the wallet.</span><span>Sample funds. No blockchain connection.</span><a href="#download">Choose your platform <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-diagonal"/></svg></a></div>
+        <div class="instrument-footer"><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg> Educational interface sample.</span><span>Sample funds. No wallet or blockchain connection.</span><a href="#download">Review developer builds <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-diagonal"/></svg></a></div>
       </div>
     </section>
     <div class="principle-strip section-shell" aria-label="Wcash principles"><span>Zcash roots</span><span>Merged mining</span><span>Zero dev tax</span><span>Your Wcash</span></div>
     <section id="download" class="downloads section-shell" aria-labelledby="download-title">
-      <div class="section-heading"><div><p class="eyebrow">WHEREVER YOU CALL HOME</p><h2 id="download-title">Your world.<br><span class="serif">Your wallet.</span></h2></div><p>Five platforms. One familiar feeling.<br>Take your Wcash with you.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">DEVELOPER PREVIEW</p><h2 id="download-title">Build facts.<br><span class="serif">Before files.</span></h2></div><p>No supported consumer release is available.<br>These candidates are for technical evaluation.</p></div>
+      <aside class="preview-alert" aria-label="Developer preview warning"><strong>Unsupported Mainnet candidates</strong><span>Current builds are unsigned or debug-signed and connect through an unauthenticated plaintext wallet service. Do not use them for material funds. Checksums detect download corruption; they do not authenticate the publisher without a signed trust root.</span></aside>
       <div class="download-card">
         <div class="platform-picker" role="tablist" aria-label="Choose your download platform" aria-orientation="vertical">
           <button id="tab-ios" role="tab" aria-selected="false" aria-controls="platform-panel" tabindex="-1" data-platform="ios"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-apple"/></svg><span>iOS<span>For iPhone</span></span><svg class="icon platform-arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button>
@@ -102,13 +103,25 @@
           <button id="tab-linux" role="tab" aria-selected="false" aria-controls="platform-panel" tabindex="-1" data-platform="linux"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-linux"/></svg><span>Linux<span>For your Linux desktop</span></span><svg class="icon platform-arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button>
         </div>
         <div id="platform-panel" class="platform-panel" role="tabpanel" aria-labelledby="tab-macos" tabindex="0">
-          <div class="download-panel-top"><span>YOUR WEC, AT HOME.</span><img class="download-brand" src="/assets/wcash-mark.svg" alt="" width="38" height="38"></div>
+          <div class="download-panel-top"><span id="platform-status">DEVELOPER PREVIEW · UNSUPPORTED</span><img class="download-brand" src="/assets/wcash-mark.svg" alt="" width="38" height="38"></div>
           <div class="selected-platform-icon"><svg class="icon" aria-hidden="true"><use id="selected-platform-symbol" href="#i-apple"/></svg></div>
-          <h3 id="platform-title">Wcash for macOS</h3><p id="platform-description">A little more privacy for your everyday desktop.</p>
-          <a id="platform-download" class="button" href="https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/Wcash-Wallet-MAINNET-UNSIGNED-2.0.25-181-mac-arm64.zip"><span>Download for macOS</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-download"/></svg></a>
-          <p id="platform-download-note" class="download-fineprint">Unsigned ARM64 prerelease. macOS may show an unverified-developer warning.</p>
+          <h3 id="platform-title">macOS developer preview</h3><p id="platform-description">Unsigned engineering candidate for technical evaluation.</p>
+          <dl class="release-facts" aria-label="Selected build details">
+            <div><dt>Network</dt><dd id="platform-network">Wcash Mainnet · plaintext wallet service</dd></div>
+            <div><dt>Version</dt><dd id="platform-version">2.0.25 (build 181)</dd></div>
+            <div><dt>Architecture</dt><dd id="platform-architecture">Apple silicon (ARM64)</dd></div>
+            <div><dt>Signing</dt><dd id="platform-signing">Unsigned; not notarized</dd></div>
+            <div><dt>Install method</dt><dd id="platform-install">Download ZIP, extract, then launch manually</dd></div>
+            <div><dt>Source commit</dt><dd><a id="platform-source-commit" href="https://github.com/w-cash/wallet-desktop/commit/6687e56a30d5477f6e70375fda0666f966cd6118"><code>6687e56a30d5</code></a></dd></div>
+            <div><dt>SHA-256</dt><dd><code id="platform-sha256">cba78d82161afbe6b1748184a627b0a20e4bbd52ddfd65195780dc4cdd2df8e0</code></dd></div>
+            <div><dt>Support</dt><dd id="platform-support">Unsupported developer candidate; do not use for material funds</dd></div>
+          </dl>
+          <p id="platform-download-note" class="download-fineprint">macOS may block or warn about this unverified build.</p>
+          <a id="platform-download" class="button candidate-download" href="https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/Wcash-Wallet-MAINNET-UNSIGNED-2.0.25-181-mac-arm64.zip"><span>Download unsupported candidate</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-download"/></svg></a>
+          <nav class="release-links" aria-label="Selected build evidence"><a id="platform-source" href="https://github.com/w-cash/wallet-desktop">Source repository</a><a id="platform-release" href="https://github.com/w-cash/wallet-desktop/releases/tag/wcash-desktop-2.0.25-181">Release notes</a><a id="platform-manifest" href="https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/MANIFEST.json">MANIFEST.json</a><a id="platform-checksums" href="https://github.com/w-cash/wallet-desktop/releases/download/wcash-desktop-2.0.25-181/SHA256SUMS.txt">Checksums</a></nav>
         </div>
       </div>
+      <p class="download-recovery">Before testing with any funds, make an offline recovery backup and confirm you can restore it. Current candidates have no support commitment.</p>
     </section>
     <section class="brand-manifesto section-shell" aria-labelledby="manifesto-title"><p class="eyebrow">LESS PUBLIC. MORE PERSONAL.</p><h2 id="manifesto-title">Your coffee.<br>Your next big thing.<br><em>Your business.</em></h2><div><p>Life isn’t a ledger for everyone to read.<br>Wcash Wallet brings private money into your everyday.</p><p>Choose shielded transfers. Hold your own keys.<br>Keep your recovery phrase safe and offline.</p></div></section>
     <section id="why-wcash" class="wcash-story section-shell" aria-labelledby="story-title">
@@ -122,15 +135,15 @@
       <div class="faq-intro"><p class="eyebrow">GOOD TO KNOW</p><h2 id="faq-title">A little clarity<br>goes a <span class="serif">long way.</span></h2><p>The essentials, without the fine print.</p><a class="text-link" href="https://w.cash" target="_blank" rel="noopener noreferrer">More about Wcash <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-diagonal"/></svg></a></div>
       <div class="faq-list">
         <details open><summary>What is Wcash?<span class="faq-plus" aria-hidden="true"></span></summary><p>Wcash, at w.cash, is an independent network forked from the Zcash codebase, with merged mining and no protocol development tax. Wcash and Zcash are separate networks with separate coins. This wallet is designed for WEC.</p></details>
-        <details><summary>How is Wcash Wallet related to Zingo?<span class="faq-plus" aria-hidden="true"></span></summary><p>Wcash Wallet is based on Zingo and adapted for the Wcash network. The two foundations are distinct: the Wcash network is a Zcash fork; the wallet is based on Zingo. This site presents a Wcash interface concept and an illustrative demo. Explore the <a href="https://github.com/zingolabs/zingo-mobile" target="_blank" rel="noopener noreferrer">Zingo mobile source</a> and <a href="https://github.com/zingolabs/zingo-pc" target="_blank" rel="noopener noreferrer">desktop source</a> for the upstream projects.</p></details>
+        <details><summary>How is Wcash Wallet related to Zingo?<span class="faq-plus" aria-hidden="true"></span></summary><p>Wcash Wallet is based on Zingo and adapted for the Wcash network. The Wcash forks are <a href="https://github.com/w-cash/wallet-mobile" target="_blank" rel="noopener noreferrer">wallet-mobile</a> and <a href="https://github.com/w-cash/wallet-desktop" target="_blank" rel="noopener noreferrer">wallet-desktop</a>. Upstream attribution remains with the <a href="https://github.com/zingolabs/zingo-mobile" target="_blank" rel="noopener noreferrer">Zingo mobile</a> and <a href="https://github.com/zingolabs/zingo-pc" target="_blank" rel="noopener noreferrer">Zingo PC</a> projects. The browser experience on this page is an educational sample with no wallet or network connection.</p></details>
         <details><summary>Is every transaction private?<span class="faq-plus" aria-hidden="true"></span></summary><p>Privacy depends on the transaction and the recipient’s address. A supported shielded transfer can conceal the on-chain sender, recipient, and amount. A transparent recipient exposes their receiving address and amount. Transfers between pools can reveal information too. Check the recipient and privacy state before sending.</p></details>
         <details><summary>What does “no dev tax” mean?<span class="faq-plus" aria-hidden="true"></span></summary><p>The protocol does not divert a share of block rewards to a development fund. This is a rule about mining rewards, not a promise of free transactions. Network transaction fees still apply.</p></details>
         <details><summary>Who controls my wallet?<span class="faq-plus" aria-hidden="true"></span></summary><p>You do. A self-custody wallet puts the keys in your hands. Keep your recovery phrase offline in a safe place, and never share it. Anyone with that phrase can control the wallet; losing it can mean losing access to your funds.</p></details>
-        <details><summary>Which devices can I use?<span class="faq-plus" aria-hidden="true"></span></summary><p>Prerelease packages are available for iOS, Android, macOS, Windows, and Linux. The download panel explains the signing and architecture of each package before you download it.</p></details>
+        <details><summary>Which devices can I use?<span class="faq-plus" aria-hidden="true"></span></summary><p>There is no supported consumer release. Unsupported developer candidates exist for Android, macOS, Windows, and Linux. Android is debug-signed; desktop packages are unsigned. TestFlight is not available, and the unsigned iOS compile archive is not offered as an install download. Developers can use the linked source build instructions.</p></details>
       </div>
     </section>
-    <section class="closing section-shell" aria-labelledby="closing-title"><div class="closing-lockup"><span class="closing-mark" aria-hidden="true"><img src="/assets/wcash-mark.svg" alt="" width="64" height="64"></span><p class="eyebrow">A LITTLE MORE PRIVACY. A LOT MORE YOU.</p><h2 id="closing-title">Welcome to<br><span class="serif">your private life.</span></h2><p class="closing-foundation">Zingo’s wallet foundation.<strong>Your Wcash. Your keys.</strong></p><a class="button" href="#download">Get Wcash Wallet <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-diagonal"/></svg></a></div><div class="closing-rail"><span>Self-custody</span><span>Shielded transfers</span><span>Five platforms</span></div></section>
+    <section class="closing section-shell" aria-labelledby="closing-title"><div class="closing-lockup"><span class="closing-mark" aria-hidden="true"><img src="/assets/wcash-mark.svg" alt="" width="64" height="64"></span><p class="eyebrow">EDUCATIONAL DEMO · DEVELOPER BUILDS</p><h2 id="closing-title">See what is<br><span class="serif">being built.</span></h2><p class="closing-foundation">Zingo’s wallet foundation.<strong>Adapted for Wcash.</strong></p><a class="button" href="#download">Review developer previews <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-diagonal"/></svg></a></div><div class="closing-rail"><span>Educational demo</span><span>Unsupported candidates</span><span>No iOS install release</span></div></section>
   </main>
-  <footer class="site-footer section-shell"><div class="footer-top"><a class="brand" href="/" aria-label="Wcash Wallet home"><img class="brand-mark" src="/assets/wcash-mark.svg" alt="" width="42" height="42"><span>Wcash<span class="brand-light">Wallet</span></span></a><a class="text-link" href="https://w.cash" target="_blank" rel="noopener noreferrer">Explore w.cash <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-diagonal"/></svg></a></div><div class="footer-bottom"><span>© 2026 Wcash Wallet</span><a href="https://zingolabs.org/zingo/" target="_blank" rel="noopener noreferrer">Based on Zingo · Adapted for Wcash</a><a href="#download">iOS · Android · macOS · Windows · Linux</a></div></footer>
+  <footer class="site-footer section-shell"><div class="footer-top"><a class="brand" href="/" aria-label="Wcash Wallet home"><img class="brand-mark" src="/assets/wcash-mark.svg" alt="" width="42" height="42"><span>Wcash<span class="brand-light">Wallet</span></span></a><a class="text-link" href="https://w.cash" target="_blank" rel="noopener noreferrer">Explore w.cash <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-diagonal"/></svg></a></div><div class="footer-bottom"><span>© 2026 Wcash Wallet</span><a href="https://zingolabs.org/zingo/" target="_blank" rel="noopener noreferrer">Based on Zingo · Adapted for Wcash</a><a href="#download">Developer preview · Unsupported</a></div></footer>
 </body>
 </html>

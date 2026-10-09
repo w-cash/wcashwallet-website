@@ -1,0 +1,14 @@
+{
+  "name": "wcashwallet-website",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "test:static": "node --test tests/site.test.mjs",
+    "test:redirect-checker": "node --test tests/http-redirect.test.mjs",
+    "test:deployment": "node scripts/check-http-redirect.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
