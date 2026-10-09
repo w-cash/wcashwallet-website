@@ -31,7 +31,7 @@
   <link rel="preload" href="/assets/fonts/roboto-latin-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/roboto-latin-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/roboto-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/styles.css?v=11">
+  <link rel="stylesheet" href="/styles.css?v=12">
   <script src="/app.js?v=4" defer></script>
   <noscript><style>@media(max-width:900px){.menu-toggle{display:none}.mobile-nav[hidden]{display:grid!important;position:absolute;top:77px;left:0;right:0;padding:13px 20px 22px;border:1px solid #05234c;background:#040c17;box-shadow:0 20px 30px #0008}.mobile-nav[hidden]>a{padding:12px 0;color:#c0cbdc;font:400 15px/1.5 Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}}</style></noscript>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://wcashwallet.com/#organization","name":"Wcash Wallet","url":"https://wcashwallet.com/","logo":{"@type":"ImageObject","url":"https://wcashwallet.com/assets/wcash-mark.png","width":512,"height":512}},{"@type":"WebSite","@id":"https://wcashwallet.com/#website","name":"Wcash Wallet","url":"https://wcashwallet.com/","publisher":{"@id":"https://wcashwallet.com/#organization"}},{"@type":"WebPage","@id":"https://wcashwallet.com/#page","name":"Wcash Wallet Developer Preview","url":"https://wcashwallet.com/","description":"Educational wallet demo and unsupported developer-preview builds for WEC. No supported consumer release is available.","isPartOf":{"@id":"https://wcashwallet.com/#website"},"about":{"@id":"https://wcashwallet.com/#organization"}}]}</script>
@@ -93,7 +93,13 @@
     <div class="principle-strip section-shell" aria-label="Wcash principles"><span>Zcash roots</span><span>Merged mining</span><span>Zero dev tax</span><span>Your Wcash</span></div>
     <section id="download" class="downloads section-shell" aria-labelledby="download-title">
       <div class="section-heading"><div><p class="eyebrow">DEVELOPER PREVIEW</p><h2 id="download-title">Build facts.<br><span class="serif">Before files.</span></h2></div><p>No supported consumer release is available.<br>These candidates are for technical evaluation.</p></div>
-      <aside class="preview-alert" aria-label="Developer preview warning"><strong>Unsupported Mainnet candidates</strong><span>Current builds are unsigned or debug-signed and connect through an unauthenticated plaintext wallet service. Do not use them for material funds. Checksums detect download corruption; they do not authenticate the publisher without a signed trust root.</span></aside>
+      <aside class="preview-alert" aria-label="Developer preview warning">
+        <div class="preview-alert-heading">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>
+          <strong>Developer preview — unsupported</strong>
+        </div>
+        <p>These builds connect to Wcash Mainnet but are unsigned or debug-signed and use an unauthenticated plaintext wallet service. Do not use them for material funds. Checksums verify file integrity; they do not verify the publisher.</p>
+      </aside>
       <div class="download-card">
         <div class="platform-picker" role="tablist" aria-label="Choose your download platform" aria-orientation="vertical">
           <button id="tab-ios" role="tab" aria-selected="false" aria-controls="platform-panel" tabindex="-1" data-platform="ios"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-apple"/></svg><span>iOS<span>For iPhone</span></span><svg class="icon platform-arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button>

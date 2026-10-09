@@ -29,7 +29,7 @@ test('makes the educational demo and unsupported release state prominent', () =>
   assert.match(html, /EDUCATIONAL SAMPLE \/ 01/);
   assert.match(html, /NO REAL FUNDS · NO NETWORK/);
   assert.match(html, /No supported consumer release is available/);
-  assert.match(html, /Unsupported Mainnet candidates/);
+  assert.match(html, /Developer preview — unsupported/);
   assert.doesNotMatch(html, />Get the wallet</i);
   assert.doesNotMatch(html, /Five platforms/i);
 });

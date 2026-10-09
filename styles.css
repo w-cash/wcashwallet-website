@@ -762,23 +762,40 @@ em {
 /* Developer-preview release evidence. Keep warnings and provenance ahead of every file link. */
 .preview-alert {
   display: grid;
-  grid-template-columns: minmax(180px, .42fr) minmax(0, 1fr);
-  gap: 24px;
+  grid-template-columns: minmax(230px, .42fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 28px;
   margin: -18px 0 28px;
-  padding: 20px 22px;
-  border: 1px solid #8b6936;
-  border-radius: 4px;
-  background: #231b0d;
-  color: #d9c49c;
+  padding: 22px 24px;
+  border: 1px solid #9d7938;
+  border-left: 4px solid #ffcf78;
+  border-radius: 6px;
+  background: linear-gradient(110deg, #2a200f, #19150d);
+  color: #e3d3b2;
   text-align: left;
 }
 
-.preview-alert strong {
-  color: #ffcf78;
-  font-size: 15px;
+.preview-alert-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
 }
 
-.preview-alert span {
+.preview-alert-heading .icon {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  color: #ffcf78;
+}
+
+.preview-alert-heading strong {
+  color: #ffcf78;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.preview-alert p {
+  margin: 0;
   font-size: 14px;
   line-height: 1.6;
 }
@@ -881,8 +898,9 @@ em {
 @media (max-width: 700px) {
   .preview-alert {
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 12px;
     margin-top: -8px;
+    padding: 18px;
   }
 
   .platform-panel {
