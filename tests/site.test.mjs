@@ -70,3 +70,22 @@ test('pins every offered artifact to the published source and checksum', () => {
   ];
   for (const value of expected) assert.match(html + script, new RegExp(value));
 });
+
+test('gives miners an exact wallet-to-pool payout path', () => {
+  assert.match(html, /id="mining-payouts"/);
+  assert.match(html, /Wcash Mainnet Unified Address with an Ironwood receiver/);
+  assert.match(html, /On desktop, use Unified; on Android, use Shielded Address/);
+  assert.match(html, /address whose type includes Ironwood/);
+  assert.match(html, /https:\/\/pool\.zecwec\.com\//);
+  assert.match(html, /Never give the phrase or a private key to the pool/);
+  assert.match(html, /Worker credentials belong in the miner; wallet secrets do not/);
+  assert.doesNotMatch(html, /demo:wcash:shielded-wallet[\s\S]{0,300}pool\.zecwec\.com/);
+});
+
+test('keeps the mining path behind the developer-preview warning', () => {
+  const warningPosition = html.indexOf('Developer preview — unsupported');
+  const miningPosition = html.indexOf('id="mining-payouts"');
+  assert.ok(warningPosition > -1 && miningPosition > warningPosition);
+  assert.match(html, /Current wallet builds are developer previews/);
+  assert.match(html, /Do not rely on them for material funds/);
+});

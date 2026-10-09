@@ -8,6 +8,8 @@ There is no supported consumer wallet release. The site labels the current Andro
 
 Candidate evidence comes from the official [`w-cash/wallet-mobile`](https://github.com/w-cash/wallet-mobile) and [`w-cash/wallet-desktop`](https://github.com/w-cash/wallet-desktop) prereleases. Checksums detect download corruption, but do not authenticate the publisher without a signed trust root.
 
+The mining-payout guide links the wallet to [ZecWec Pool](https://pool.zecwec.com/) and names the accepted WEC destination: a Wcash Mainnet Unified Address with an Ironwood receiver. It keeps wallet recovery material separate from pool and miner credentials and preserves the developer-preview warning before the onboarding steps.
+
 Serve this directory as the web root. All public assets use root-relative URLs.
 
 ## Checks
