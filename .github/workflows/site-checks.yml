@@ -1,0 +1,37 @@
+name: Site checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      redirect_mappings:
+        description: HTTP-to-HTTPS origin mappings separated by spaces
+        required: true
+        default: http://wcashwallet.com=https://wcashwallet.com http://www.wcashwallet.com=https://wcashwallet.com
+
+permissions:
+  contents: read
+
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm test
+
+  deployed-http-redirect:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Assert HTTP never serves wallet HTML
+        env:
+          REDIRECT_MAPPINGS: ${{ inputs.redirect_mappings }}
+        run: node scripts/check-http-redirect.mjs $REDIRECT_MAPPINGS

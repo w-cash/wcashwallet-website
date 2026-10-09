@@ -759,6 +759,149 @@ em {
   }
 }
 
+/* Developer-preview release evidence. Keep warnings and provenance ahead of every file link. */
+.preview-alert {
+  display: grid;
+  grid-template-columns: minmax(180px, .42fr) minmax(0, 1fr);
+  gap: 24px;
+  margin: -18px 0 28px;
+  padding: 20px 22px;
+  border: 1px solid #8b6936;
+  border-radius: 4px;
+  background: #231b0d;
+  color: #d9c49c;
+  text-align: left;
+}
+
+.preview-alert strong {
+  color: #ffcf78;
+  font-size: 15px;
+}
+
+.preview-alert span {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.platform-panel {
+  justify-content: flex-start;
+  min-height: 760px;
+  padding-top: 70px;
+}
+
+.platform-panel > p:not(.download-fineprint) {
+  max-width: 560px;
+}
+
+.release-facts {
+  width: min(100%, 620px);
+  margin-top: 24px;
+  border-top: 1px solid var(--wallet-border);
+  text-align: left;
+}
+
+.release-facts > div {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  gap: 18px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--wallet-border);
+}
+
+.release-facts dt {
+  color: var(--wallet-fg-muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.release-facts dd {
+  min-width: 0;
+  color: var(--wallet-fg-default);
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.release-facts a,
+.release-links a {
+  color: var(--wallet-logo-lime);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.release-facts code {
+  font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.platform-panel > .candidate-download {
+  order: initial;
+  border-color: var(--wallet-fg-muted);
+  background: transparent;
+  color: var(--wallet-fg-default);
+}
+
+.platform-panel > .candidate-download:hover,
+.platform-panel > .candidate-download.build-instructions {
+  border-color: var(--wallet-accent);
+  background: var(--wallet-bg-surface);
+  color: var(--wallet-logo-lime);
+}
+
+.download-fineprint {
+  max-width: 560px;
+  line-height: 1.5;
+}
+
+.release-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px 18px;
+  margin-top: 18px;
+  font-size: 12px;
+}
+
+.download-recovery {
+  margin: 22px auto 0;
+  max-width: 780px;
+  color: var(--wallet-fg-muted);
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .platform-panel {
+    min-height: 820px;
+  }
+}
+
+@media (max-width: 700px) {
+  .preview-alert {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: -8px;
+  }
+
+  .platform-panel {
+    min-height: 870px;
+    padding-top: 68px;
+  }
+
+  .release-facts > div {
+    grid-template-columns: 1fr;
+    gap: 3px;
+    padding-block: 8px;
+  }
+
+  .release-facts dt,
+  .release-facts dd {
+    font-size: 12px;
+  }
+}
+
 /* Approved flow refinement: demo, principles, platforms, then the story. */
 .launch-subline-compact {
   justify-content: flex-end;
@@ -1129,4 +1272,17 @@ select:focus-visible {
     line-height: 1.25;
     text-align: right;
   }
+}
+
+/* This stays last so the generic button palette cannot hide secondary preview actions. */
+.platform-panel > .candidate-download,
+.platform-panel > .candidate-download > span {
+  color: var(--wallet-fg-default);
+}
+
+.platform-panel > .candidate-download:hover,
+.platform-panel > .candidate-download:hover > span,
+.platform-panel > .candidate-download.build-instructions,
+.platform-panel > .candidate-download.build-instructions > span {
+  color: var(--wallet-logo-lime);
 }
